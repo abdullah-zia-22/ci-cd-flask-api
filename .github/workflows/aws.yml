@@ -63,7 +63,7 @@ jobs:
             sudo rm -rf /var/www/backend/$folder_name
             cd /var/www/backend/
             sudo chmod 777 /var/www/backend
-            repo_url="https://github.com/${{ github.repository }}.git”
+            repo_url="https://github.com/${{ github.repository }}.git"
             echo "repo url is: $repo_url"
             git remote set-url origin $repo_url
             git clone $repo_url
